@@ -88,7 +88,7 @@ function changeInfo(schedule){
 
      //Placeholders i form av text
      let newTitleElName = document.createTextNode(object.title); 
-     let newTimeElName = document.createTextNode(convertDateString(object.starttimeutc));
+     let newTimeElName = document.createTextNode(convertDateString(object.starttimeutc) + "-" + convertDateString(object.endtimeutc));
      let newInfoElName = document.createTextNode(object.description);
      let filler = document.createTextNode("______________________________________________");
 
